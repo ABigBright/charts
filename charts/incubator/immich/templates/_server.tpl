@@ -9,6 +9,11 @@ args:
 securityContext:
   capabilities:
     disableS6Caps: true
+resources:
+  limits:
+    "nvidia.com/gpu": "0"
+    "amd.com/gpu": "0"
+    "gpu.intel.com/i915": "0"
 envFrom:
   - configMapRef:
       name: server-config

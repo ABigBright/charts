@@ -13,9 +13,4 @@ command:
       sleep 2
     done
     echo "URL [{{ $url }}] is ready!"
-resources:
-  limits:
-    "nvidia.com/gpu": "0"
-    "amd.com/gpu": "0"
-    "gpu.intel.com/i915": "0"
 {{- end -}}

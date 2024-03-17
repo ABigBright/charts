@@ -25,6 +25,11 @@ securityContext:
     runAsUser: 0
     runAsGroup: 0
 
+global:
+  excludeContainersFromExtraResources:
+    - main
+    - wait-server
+
 immich:
   enable_ml: true
   mlImageType: mlImage

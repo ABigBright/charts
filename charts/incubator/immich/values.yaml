@@ -29,14 +29,6 @@ immich:
   enable_ml: true
   mlImageType: mlImage
   log_level: log
-crd:
-  verify:
-    enabled: false
-resources:
-  limits:
-    "nvidia.com/gpu": "1"
-    "amd.com/gpu": "1"
-    "gpu.intel.com/i915": "1"
 
 service:
   main:
